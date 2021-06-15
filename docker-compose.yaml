@@ -32,3 +32,4 @@ services:
     volumes:
       - './nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf'
       - './wwwroot/:/usr/share/nginx/html/'
+      - './webui-aria2/:/usr/share/nginx/webui-aria2/aria2/'
