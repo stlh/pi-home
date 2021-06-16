@@ -27,9 +27,18 @@ services:
     restart: unless-stopped
   nginx:
     image: nginx:latest
+    container_name: nginx
     ports:
       - '80:80'
     volumes:
       - './nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf'
       - './wwwroot/:/usr/share/nginx/html/'
       - './webui-aria2/:/usr/share/nginx/webui-aria2/aria2/'
+  nextcloudpi:
+    image: ownyourbits/nextcloudpi
+    container_name: nextcloudpi
+    command: "10.0.0.31"
+    ports:
+      - '4443:4443'
+    volumes:
+      - './nextcloudpi-data/:/data/'
