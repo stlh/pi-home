@@ -6,7 +6,6 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/etc-dnsmasq.d": true,
-        "**/etc-pihole": true,
-        "**/nextcloudpi-data": true
+        "**/etc-pihole": true
     }
 }

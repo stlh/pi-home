@@ -14,8 +14,8 @@ services:
     environment:
       TZ: 'Asia/Shanghai'
       WEBPASSWORD: 'asdf;lkj'
-      DNS1: 223.5.5.5 
-      DNS2: 223.6.6.6
+      PIHOLE_DNS_: '223.5.5.5;223.6.6.6'
+      VIRTUAL_HOST: 'pi.home'
     # Volumes store your data between container upgrades
     volumes:
       - './etc-pihole/:/etc/pihole/'
