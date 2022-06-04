@@ -14,7 +14,7 @@ services:
     environment:
       TZ: 'Asia/Shanghai'
       WEBPASSWORD: 'asdf;lkj'
-      PIHOLE_DNS_: '223.5.5.5;223.6.6.6'
+      PIHOLE_DNS_: '223.5.5.5;223.6.6.6;2400:3200::1;2400:3200:baba::1'
       VIRTUAL_HOST: 'pi.home'
     # Volumes store your data between container upgrades
     volumes:
